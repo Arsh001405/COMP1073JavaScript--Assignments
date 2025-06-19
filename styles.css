@@ -1,0 +1,9 @@
+/* ===== Step 1: Page Background and Font ===== */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Set the font style for the entire page */
+  background: url('assignment1 image.jpg') no-repeat center center fixed; /* Background image, fixed position */
+  background-size: cover; 
+  text-align: center; /* Center all text inside the body */
+  padding: 20px; /* padding around content */
+  color: #333; /* Default text color */
+}
