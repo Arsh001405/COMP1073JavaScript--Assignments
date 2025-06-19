@@ -65,3 +65,17 @@ button:nth-of-type(2) { background-color: #4da6ff; }   /* Blue */
 button:nth-of-type(3) { background-color: #66cc66; }   /* Green */
 button:nth-of-type(4) { background-color: #ffa64d; }   /* Orange */
 button:nth-of-type(5) { background-color: #ff66cc; }   /* Pink */
+
+/* ===== Step 7: Styling Action Buttons (Show, Random, Reset) ===== */
+
+button:nth-of-type(6),
+button:nth-of-type(7),
+button:nth-of-type(8) {
+  background-color: #ffcc00; /* Yellow background */
+  color: #333; /* Dark text color */
+  width: 180px; /* Smaller width */
+  margin-top: 15px; 
+  font-size: 16px; /* Smaller font size */
+  border-radius: 12px; /* Rounded corners */
+  border: 2px solid #999; /* Gray border */
+}
