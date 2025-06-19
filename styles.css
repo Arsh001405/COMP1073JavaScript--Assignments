@@ -31,3 +31,11 @@ h1 {
   0% { filter: hue-rotate(0deg); } /* Start without hue rotation */
   100% { filter: hue-rotate(360deg); } /* Rotate hue fully */
 }
+/* ===== Step 4: Story Builder Container Styling ===== */
+#story-builder {
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+  border-radius: 20px; /* Rounded corners */
+  display: inline-block; 
+  padding: 30px 40px; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+}
