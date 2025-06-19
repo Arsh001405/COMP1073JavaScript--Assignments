@@ -6,3 +6,6 @@ const options = [
   ["goat", "monkey", "cow", "frog", "bug", "worm"],                                 // Part 4 options
   ["on the moon", "on the chair", "in my spaghetti", "in my soup", "in my shoes"]    // Part 5 options
 ];
+
+// ===== Step 2: Track currently selected indices for each part =====
+let selected = [0, 0, 0, 0, 0];
