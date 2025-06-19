@@ -9,3 +9,11 @@ const options = [
 
 // ===== Step 2: Track currently selected indices for each part =====
 let selected = [0, 0, 0, 0, 0];
+
+// ===== Step 3: Cycle through options for a specific story part =====
+function cycleOption(partIndex) {
+  // Increment the selected index for this part, wrapping around if at the end
+  selected[partIndex] = (selected[partIndex] + 1) % options[partIndex].length;
+  // Update the button text to show the currently selected option
+  document.getElementById(`part${partIndex}`).textContent = options[partIndex][selected[partIndex]];
+}
