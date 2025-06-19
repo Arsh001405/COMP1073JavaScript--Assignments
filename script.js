@@ -28,3 +28,14 @@ function showStory() {
   speakStory(story);
 }
 
+// ===== Step 5: Generate a random story by selecting random options =====
+function generateRandomStory() {
+  for (let i = 0; i < selected.length; i++) {
+    // Pick a random index for each part
+    selected[i] = Math.floor(Math.random() * options[i].length);
+    // Update button text to reflect the random choice
+    document.getElementById(`part${i}`).textContent = options[i][selected[i]];
+  }
+  // Display the new random story
+  showStory();
+}
