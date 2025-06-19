@@ -39,3 +39,21 @@ function generateRandomStory() {
   // Display the new random story
   showStory();
 }
+
+// ===== Step 6: Reset the story selections and UI to default state =====
+function resetStory() {
+  // Reset selected indices to 0 for all parts
+  selected = [0, 0, 0, 0, 0];
+  // Reset button text to "---"
+  for (let i = 0; i < selected.length; i++) {
+    document.getElementById(`part${i}`).textContent = "---";
+  }
+  // Clear the story display
+  document.getElementById("result").textContent = "";
+}
+
+// ===== Step 7: Use speech synthesis to read the story aloud =====
+function speakStory(story) {
+  const utterance = new SpeechSynthesisUtterance(story);
+  speechSynthesis.speak(utterance);
+}
