@@ -7,3 +7,22 @@ body {
   padding: 20px; /* padding around content */
   color: #333; /* Default text color */
 }
+/* ===== Step 2: Title  ===== */
+h1 {
+  font-size: 48px; /* Large font size for main title */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 30px; /* Space below the title */
+  color: #333; /* Fallback solid color */
+
+  /* Gradient background for text */
+  background: linear-gradient(to right, #ff69b4, #4da6ff, #66cc66, #ffa64d, #ff4d4d);
+
+  /* Clip gradient background to the text */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Will Make the text transparent to show gradient */
+  
+  animation: colorChange 5s infinite alternate; /* Animate hue rotation on the text */
+  
+  text-shadow: 2px 2px 4px #ffd700; /* Glow effect around the text */
+}
