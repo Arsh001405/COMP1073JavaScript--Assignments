@@ -17,3 +17,14 @@ function cycleOption(partIndex) {
   // Update the button text to show the currently selected option
   document.getElementById(`part${partIndex}`).textContent = options[partIndex][selected[partIndex]];
 }
+
+// ===== Step 4: Display the full story based on current selections =====
+function showStory() {
+  // Combine all selected parts into a full sentence
+  const story = selected.map((s, i) => options[i][s]).join(' ');
+  // Show the story in the result paragraph
+  document.getElementById("result").textContent = "Story: " + story + "!";
+  // Optionally speak the story aloud
+  speakStory(story);
+}
+
