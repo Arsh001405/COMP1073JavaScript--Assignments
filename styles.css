@@ -26,3 +26,8 @@ h1 {
   
   text-shadow: 2px 2px 4px #ffd700; /* Glow effect around the text */
 }
+/* ===== Step 3: Animation  ===== */
+@keyframes colorChange {
+  0% { filter: hue-rotate(0deg); } /* Start without hue rotation */
+  100% { filter: hue-rotate(360deg); } /* Rotate hue fully */
+}
